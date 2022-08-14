@@ -1,3 +1,38 @@
 main {
     flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* APP CONTAINER */
+
+.appContainer {
+    width: 80%;
+    height: 80%;
+
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTROLS */
+
+.appContainer__controls {
+    flex: 2;
+
+    border: 1px solid black;
+    margin: .5rem;
+    margin-bottom: 0;
+}
+
+/* DISPLAY */
+
+.appContainer__gridDisplay {
+    flex: 8;
+
+    border: 1px solid black;
+    margin: .5rem;
 }
