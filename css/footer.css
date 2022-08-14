@@ -1,0 +1,13 @@
+footer {
+    width: 100%;
+    padding: .3rem 0;
+    
+    background-color: black;
+    color: white;
+
+    text-align: center;
+}
+
+footer > p > span {
+    text-decoration: underline;
+}
