@@ -3,7 +3,9 @@ function addGridElement(quantity) {
     const divArray = [];
 
     for (let i = 0; i < quantity; i++) {
-        divArray.push(document.createElement('div'));
+        let div = document.createElement('div');
+        div.classList.add('gridElement')
+        divArray.push(div);
     }
 
     divArray.forEach((item) => {
