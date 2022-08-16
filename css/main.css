@@ -32,7 +32,10 @@ main {
 
 .appContainer__gridDisplay {
     flex: 8;
-
     border: 1px solid black;
     margin: .5rem;
+}
+
+.gridElement {
+    border: 1px solid black;
 }
