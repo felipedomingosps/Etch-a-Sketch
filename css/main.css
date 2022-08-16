@@ -9,9 +9,8 @@ main {
 /* APP CONTAINER */
 
 .appContainer {
-    width: 80%;
-    height: 80%;
-
+    width: 500px;
+    height: 500px;
     border: 1px solid black;
 
     display: flex;
