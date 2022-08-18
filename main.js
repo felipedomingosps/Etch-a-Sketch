@@ -13,7 +13,7 @@ function addGrid(quantity) {
 }
 
 function addGridElement(quantity) {
-    const gridDisplay = document.getElementById('gridDisplay');
+    const gridDisplay = document.querySelector('#gridDisplay');
     const divArray = [];
 
     for (let i = 0; i < (quantity*quantity); i++) {
