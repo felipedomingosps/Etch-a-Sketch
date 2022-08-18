@@ -61,5 +61,6 @@ main {
     margin: .5rem;
 }
 
-
-
+.gridElement {
+    border: 1px solid black;
+}
