@@ -10,10 +10,17 @@ function addGrid(quantity) {
 
     let script = document.querySelector('script');
     script.parentNode.insertBefore(style, script);
+    const gridDisplay = document.querySelector('#gridDisplay');
+    const allElements = document.querySelectorAll('.gridElement');
+    
+    Array.from(allElements).forEach((item)=> {
+        gridDisplay.removeChild(item);
+    })
 }
 
 function addGridElement(quantity) {
     const gridDisplay = document.querySelector('#gridDisplay');
+    
     const divArray = [];
 
     for (let i = 0; i < (quantity*quantity); i++) {
