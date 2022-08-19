@@ -36,3 +36,12 @@ function addGridElement(quantity) {
     }
     ) 
 }
+
+function returnColor(){
+    const colorPicker = document.querySelector('#colorPicker');
+
+    colorPicker.addEventListener('focusout', (event) => {
+        console.log(event.srcElement.value);
+
+    });
+}
