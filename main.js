@@ -1,10 +1,19 @@
-function addGrid(quantity) {
+function selectGridElementAmount() {
+    const slider = document.querySelector('#slider');
+    slider.addEventListener('mouseup', (e) => {
+        addGrid(e.target.value);
+        addGridElement(e.target.value);
+    })
+}
+
+function addGrid(amount) {
+    /* Done */
     let style = document.createElement('style');
     style.innerHTML = `
         .gridDisplay {
             display: grid;
-            grid-template-columns: repeat(${quantity}, 1fr);
-            grid-template-rows: repeat(${quantity}, 1fr);
+            grid-template-columns: repeat(${amount}, 1fr);
+            grid-template-rows: repeat(${amount}, 1fr);
         }
     `;
 
@@ -18,12 +27,12 @@ function addGrid(quantity) {
     })
 }
 
-function addGridElement(quantity) {
+function addGridElement(amount) {
     const gridDisplay = document.querySelector('#gridDisplay');
     
     const divArray = [];
 
-    for (let i = 0; i < (quantity*quantity); i++) {
+    for (let i = 0; i < (amount*amount); i++) {
         let div = document.createElement('div');
         div.classList.add('gridElement')
         divArray.push(div);
@@ -41,7 +50,8 @@ function returnColor(){
     const colorPicker = document.querySelector('#colorPicker');
 
     colorPicker.addEventListener('focusout', (event) => {
-        console.log(event.srcElement.value);
+        console.log(event.target.value);
+        /* change srcElement to 'target' */
 
     });
 }
