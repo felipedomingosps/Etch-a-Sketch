@@ -6,6 +6,7 @@ function main() {
         let style = document.createElement('style');
         style.innerHTML = `
             .gridDisplay {
+                box-sizing: content-box;
                 display: grid;
                 grid-template-columns: repeat(${amount}, 1fr);
                 grid-template-rows: repeat(${amount}, 1fr);

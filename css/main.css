@@ -9,8 +9,6 @@ main {
 /* APP CONTAINER */
 
 .appContainer {
-    width: 500px;
-    height: 500px;
     border: 1px solid black;
 
     display: flex;
@@ -20,8 +18,6 @@ main {
 /* CONTROLS */
 
 .appContainer__controls {
-    flex: 2;
-
     border: 1px solid black;
     margin: .5rem;
     margin-bottom: 0;
@@ -56,11 +52,12 @@ main {
 /* DISPLAY */
 
 .appContainer__gridDisplay {
-    flex: 8;
     border: 1px solid black;
     margin: .5rem;
+    width: 500px;
+    height: 500px;
 }
 
 .gridElement {
-    border: 1px solid black;
+    box-sizing: content-box;
 }
