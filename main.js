@@ -112,9 +112,7 @@ function main() {
 
     function restart() {
         document.querySelector('#restart').addEventListener('click', () => {
-            addGrid(16)
-            addGridElement(16)
-            addColor('#000000')
+            window.location.reload()
         })
     }
 
