@@ -20,17 +20,23 @@
     <main>
         <div class="appContainer">
             <div class="appContainer__controls">
-                <div class="controls__slider">
+                <div class="controls controls__slider">
                     <label for="slider" >Grid Size</label>
                     <input type="range" name="slider" id="slider" value="16" min="16" max="60" oninput="this.nextElementSibling.value = this.value + ' x '+ this.value">
                     <output>16 X 16</output>
                 </div>
-                <div class="controls__colorPicker">
+                <div class="controls controls__colorPicker">
                     <label for="colorPicker">Color Picker</label>
                     <input type="color" name="colorPicker" id="colorPicker" value="#000000">
                 </div>
-                <div class="controls__eraser"><i class="fa-solid fa-eraser" alt="eraser"></i></div>
-                <div class="controls__restart"><i class="fa-solid fa-arrow-rotate-right" alt="restart"></i></div>
+                <div class="controls controls__eraser">
+                    <label for="eraser">Eraser</label>
+                    <div class="icon eraser__icon" name="eraser" id="eraser"><i class="fa-solid fa-eraser" alt="eraser"></i></div>
+                </div>
+                <div class="controls controls__restart">
+                    <label for="restart">Restart</label>
+                    <div class="icon restart_icon" name="restart" id="restart"><i class="fa-solid fa-arrow-rotate-right" alt="restart"></i></div>
+                </div>
             </div>
             <div class="appContainer__gridDisplay" id="gridDisplay">
             </div>

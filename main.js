@@ -1,7 +1,6 @@
 
 
 function main() {
-
     function addGrid(amount) {
         let style = document.createElement('style');
         style.innerHTML = `
@@ -102,12 +101,30 @@ function main() {
         
 
     }
+
+    function erase() {
+        document.querySelector('#eraser').addEventListener('click', () => {
+            addColor('transparent')
+        })
+    }
+
+    function restart() {
+        document.querySelector('#restart').addEventListener('click', () => {
+            addGrid(16)
+            addGridElement(16)
+            addColor('#000000')
+        })
+    }
+
+    /* SET INITIAL VALUES */
     addGrid(16)
     addGridElement(16)
     addColor('#000000')
+
+    /* CALL FUNCTIONS */
     selectGridElementAmount()
     returnColor()
-
-
+    erase()
+    restart()
 }
 main()
