@@ -69,11 +69,13 @@ function main() {
             e.addEventListener('pointerdown', () => {
                 pressed = 1;
                 e.style.backgroundColor = color;
+                e.style.border =  'none';
             })            
 
             e.addEventListener('pointerup', () => {
                 pressed = 0;
                 e.style.backgroundColor = color;
+                e.style.border =  'none';
             })
             e.addEventListener('dragstart', (dragStart) => {
                 dragStart.preventDefault()
@@ -93,8 +95,8 @@ function main() {
                 if (pressed === 1) {
                     e.style.backgroundColor = color;
                     pressed = 1;
+                    e.style.border =  'none';
                 }
-                
             })
         })
 
