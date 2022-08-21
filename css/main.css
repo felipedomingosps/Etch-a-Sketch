@@ -62,4 +62,5 @@ main {
 
 .gridElement {
     box-sizing: content-box;
+    border: 1px solid #b2b1b11d;
 }
